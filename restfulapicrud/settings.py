@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
+import django_heroku
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +28,7 @@ SECRET_KEY = 'django-insecure-k*x=o^amhlv#ns4)hc%24cfz@tgn#apw(-$wrx2x@s(3$@%950
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['balajibookmanagementapp.herokuapp.com']
 
 
 # Application definition
@@ -77,11 +80,12 @@ WSGI_APPLICATION = 'restfulapicrud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'restfulapiDB',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd8ugu8k2k3pk1g',
+        'USER': 'weplmdbhvzbpie',
+        'PASSWORD': '8e9c5c222c535451aca69d0d29a5865736931116f874fdb7dfa2ea1051cf94ba',
+        'HOST': 'ec2-3-229-166-245.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -122,7 +126,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
