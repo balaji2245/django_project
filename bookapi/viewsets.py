@@ -11,5 +11,6 @@ class BookViewset(viewsets.ModelViewSet):
     print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{{{{}{}{}{[][][[][][]]")
     temp = models.Book.objects.get(id=1)
     print(temp.name)
+    print(len(queryset))
     serializer_class = serializers.BookSerializer
 
