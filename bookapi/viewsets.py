@@ -9,6 +9,6 @@ class BookViewset(viewsets.ModelViewSet):
 #     print("++++++++++++++====")
 #     queryset = dict1
     print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{{{{}{}{}{[][][[][][]]")
-    print(queryset.name)
+    print(Book.objects.get())
     serializer_class = serializers.BookSerializer
 
