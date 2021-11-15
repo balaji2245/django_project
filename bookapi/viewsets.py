@@ -8,5 +8,6 @@ class BookViewset(viewsets.ModelViewSet):
     dict = {"status_code": 200, "status": "success", "data": queryset}
     print("++++++++++++++")
     queryset = dict
+    print(queryset)
     serializer_class = serializers.BookSerializer
 
