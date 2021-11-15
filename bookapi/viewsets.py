@@ -14,7 +14,10 @@ class BookViewset(viewsets.ModelViewSet):
     print(len(queryset))
     temp1 = []
     temp1.append(queryset[0])
+    dict1 = {"status_code": 200, "status": "success", "data":temp1}
+    
     print(temp1)
+    print(dict1)
     
     serializer_class = serializers.BookSerializer
 
