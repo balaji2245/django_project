@@ -6,6 +6,8 @@ class BookSerializer(serializers.ModelSerializer):
         model = Book
         print(model, "++++==+++")
         fields = '__all__'
+        print(fields, "------000")
+        
 #         dict = {"status_code": 200, "status": "success", "data": fields}
 #         fields = dict
 
