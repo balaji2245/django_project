@@ -18,6 +18,6 @@ class BookViewset(viewsets.ModelViewSet):
     
     print(temp1)
     print(dict1)
-    
+    queryset = dict1
     serializer_class = serializers.BookSerializer
 
