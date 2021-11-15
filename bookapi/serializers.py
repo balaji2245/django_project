@@ -7,3 +7,5 @@ class BookSerializer(serializers.ModelSerializer):
         fields = '__all__'
         dict = {"status_code": 200, "status": "success", "data": fields}
         fields = dict
+
+        
