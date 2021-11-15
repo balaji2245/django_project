@@ -3,10 +3,16 @@ from django.shortcuts import render
 # Create your views here.
 
 from .serializers import BookSerializer
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 
 # class BookList(APIView):
-def get(self, request):
+
+@api_view()
+@permission_classes([AllowAny])
+def get(request):
   print("requested {{{{{{{{{{{{{{{{{{")
     
   my_books = Book.objects.all()
