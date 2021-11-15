@@ -3,7 +3,7 @@ from .models import Book
 
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Book
+        model = BookList.get()
         print(model, "++++==+++")
         fields = '__all__'
         print(fields[0], "------000")
