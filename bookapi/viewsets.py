@@ -12,5 +12,7 @@ class BookViewset(viewsets.ModelViewSet):
     temp = models.Book.objects.get(id=1)
     print(temp.name)
     print(len(queryset))
+    print(queryset.dtype)
+    
     serializer_class = serializers.BookSerializer
 
