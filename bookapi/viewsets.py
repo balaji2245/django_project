@@ -5,9 +5,9 @@ from . import serializers
 class BookViewset(viewsets.ModelViewSet):
     queryset = models.Book.objects.all()
     
-#     dict = {"status_code": 200, "status": "success", "data": queryset}
+    dict1 = {"status_code": 200, "status": "success", "data": queryset}
     print("++++++++++++++====")
-#     queryset = dict
+    queryset = dict1
     print(queryset)
     serializer_class = serializers.BookSerializer
 
