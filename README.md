@@ -11,37 +11,6 @@ You can access the API using following API call:
 https://balajibookmanagementapp.herokuapp.com/api/book/
 ```
 
-## Setup
-
-The first thing to do is to clone the repository:
-
-```sh
-$ git clone https://github.com/balaji2245/django_project_externalapi.git
-```
-
-Create a virtual environment to install dependencies in and activate it:
-
-```sh
-$ virtualenv2 --no-site-packages env
-$ source env/bin/activate
-```
-
-Then install the dependencies:
-
-```sh
-(env)$ pip install -r requirements.txt
-```
-Note the `(env)` in front of the prompt. This indicates that this terminal
-session operates in a virtual environment set up by `virtualenv2`.
-
-Once `pip` has finished downloading the dependencies:
-```sh
-(env)$ cd project
-(env)$ python manage.py runserver
-```
-And navigate to `http://127.0.0.1:8000/balaji2245/`.
-
-
 ## Walkthrough
 
 I have deployed the working API on Heroku, you can see use following website to look at its woking:
@@ -110,4 +79,34 @@ Thus, after deleting 8th record we have our dataset as follows:
 
 ![9](https://user-images.githubusercontent.com/40818500/141839766-6a0480d4-a0da-4274-b6b8-5ee4a6c8fb81.png)
 
+
+## Setup
+
+The first thing to do is to clone the repository:
+
+```sh
+$ git clone https://github.com/balaji2245/django_project.git
+```
+
+Create a virtual environment to install dependencies in and activate it:
+
+```sh
+$ virtualenv2 --no-site-packages env
+$ source env/bin/activate
+```
+
+Then install the dependencies:
+
+```sh
+(env)$ pip install -r requirements.txt
+```
+Note the `(env)` in front of the prompt. This indicates that this terminal
+session operates in a virtual environment set up by `virtualenv2`.
+
+Once `pip` has finished downloading the dependencies:
+```sh
+(env)$ cd project
+(env)$ python manage.py runserver
+```
+And navigate to `http://127.0.0.1:8000/balaji2245/`.
 
